@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><title>Projects | Surya Sandeep Akella</title><link rel="stylesheet" href="style.css" /></head>
+<body class="page-transition"><div class="page-shell">
+<header class="site-header"><nav class="nav"><a class="brand" href="index.html"><span class="brand-mark">SA</span><span>Surya Sandeep Akella</span></a><button class="menu-button" aria-expanded="false">Menu</button><div class="nav-links"><a href="index.html">Home</a><a href="education.html">Education</a><a href="experience.html">Work Experience</a><a href="projects.html">Projects</a><a href="contact.html">Contact</a><a class="resume-pill" href="resume.pdf" target="_blank">Resume</a></div></nav></header>
+<main>
+
+<section class="page-hero compact-hero page-hero-soft"><div class="page-hero-inner reveal"><p class="eyebrow">Projects</p><h1>Major builds first. Course projects after.</h1><p>Dynamic Load Balancer and MimicArm get deeper technical breakdowns, image galleries, and demo links. The rest are course projects from the last two years.</p></div></section>
+
+<section class="section featured-projects">
+  <div class="section-head reveal"><div><p class="eyebrow">Featured Builds</p><h2>Hands-on systems work</h2></div><p>These two best show embedded hardware, firmware, integration, and debug.</p></div>
+
+  <details class="project-detail reveal" open>
+    <summary>
+      <div class="project-visual mini visual-photo-card"><img src="images/dynamic-load-balancer-1.jpeg" alt="Dynamic Load Balancer project photo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" /><div class="visual-placeholder"><div><div class="visual-title">Dynamic Load Balancer</div><div class="visual-sub">Satellite microgrid • Embedded power • IoT</div></div><span class="badge">Featured</span></div></div>
+      <div class="project-summary-copy"><p class="project-kicker">Embedded Power + IoT</p><h2>Dynamic Load Balancer for Satellite Microgrid System</h2><p>Designed an embedded power management system for a satellite microgrid using a SAMW25 MCU, custom PCBA, and FreeRTOS firmware. The system monitored power channels, tracked battery state, controlled loads through MOSFETs, and published telemetry to a dashboard.</p><span class="open-hint">Click to expand technical breakdown</span></div>
+    </summary>
+    <div class="project-expanded">
+      <div class="project-links"><a class="button primary" href="https://youtu.be/8DYswh7vf_Q?si=RqyVT2fFKbZEUBEM" target="_blank">Watch Demo Video</a></div>
+      <div class="project-gallery" aria-label="Dynamic Load Balancer images">
+        <figure><img src="images/dynamic-load-balancer-2.png" alt="Dynamic Load Balancer hardware or demo image 1" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';" /><figcaption class="image-fallback">Add images/load-balancer-1.jpg</figcaption></figure>
+        <figure><img src="images/dynamic-load-balancer-3.png" alt="Dynamic Load Balancer hardware or demo image 2" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';" /><figcaption class="image-fallback">Add images/load-balancer-2.jpg</figcaption></figure>
+        <figure><img src="images/dynamic-load-balancer-4.jpg" alt="Dynamic Load Balancer hardware or demo image 3" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';" /><figcaption class="image-fallback">Add images/load-balancer-3.jpg</figcaption></figure>
+      </div>
+      <div class="deep-grid">
+        <article><h3>System goal</h3><p>The project acted like a small power-management controller for a satellite microgrid. It monitored electrical channels, tracked battery state, made load-control decisions, and pushed telemetry to a dashboard so the system state could be observed remotely.</p></article>
+        <article><h3>Hardware layer</h3><p>The design used a SAMW25-class embedded platform, current/voltage sensing, battery telemetry, MOSFET-based load switching, and regulated rails. The hardware challenge was making the power path measurable and controllable instead of treating it as a black box.</p></article>
+        <article><h3>Firmware layer</h3><p>The firmware was organized around FreeRTOS-style tasks for polling sensors, managing load states, handling CLI/debug commands, publishing telemetry, and supporting update paths. I2C devices and system health checks were central to the control loop.</p></article>
+        <article><h3>System integration</h3><p>MQTT and Node-RED turned the embedded board into a visible system. Instead of only proving the firmware locally, the dashboard made voltage, current, battery, and load state easier to inspect during demos and debug.</p></article>
+      </div>
+      <div class="chips"><span>PCBA</span><span>Embedded C</span><span>FreeRTOS</span><span>I2C</span><span>Power Management</span><span>MOSFET Control</span><span>Battery Telemetry</span><span>MQTT</span><span>Node-RED</span><span>OTA</span><span>Altium</span></div>
+    </div>
+  </details>
+
+  <details class="project-detail reveal">
+    <summary>
+      <div class="project-visual mini dark visual-photo-card"><img src="images/mimic-arm-1.jpg" alt="MimicArm project photo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" /><div class="visual-placeholder"><div><div class="visual-title">MimicArm</div><div class="visual-sub">Gesture-controlled robotic arm</div></div><span class="badge">Featured</span></div></div>
+      <div class="project-summary-copy"><p class="project-kicker">Robotics + Bare-Metal Firmware</p><h2>MimicArm: Gesture-Controlled Robotic Arm</h2><p>Built a 4-DOF gesture-controlled robotic arm using an ATmega328PB, MPU6050 IMU, flex sensors, and servo motors. The system converted hand motion and flex input into real-time servo actuation.</p><span class="open-hint">Click to expand technical breakdown</span></div>
+    </summary>
+    <div class="project-expanded">
+      <div class="project-links"><a class="button primary" href="https://drive.google.com/file/d/1xXghiWyomHCL5a-zHVZRfuj0blY-f9e_/view?usp=sharing" target="_blank">Watch Demo Video</a></div>
+      <div class="project-gallery" aria-label="MimicArm images">
+        <figure><img src="images/mimic-arm-1.jpg" alt="MimicArm image 1" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';" /><figcaption class="image-fallback">Add images/mimicarm-1.jpg</figcaption></figure>
+        <figure><img src="images/mimic-arm-2.jpg" alt="MimicArm image 2" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';" /><figcaption class="image-fallback">Add images/mimicarm-2.jpg</figcaption></figure>
+        <figure><img src="images/mimicarm-3.jpg" alt="MimicArm image 3" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';" /><figcaption class="image-fallback">Add images/mimicarm-3.jpg</figcaption></figure>
+      </div>
+      <div class="deep-grid">
+        <article><h3>System goal</h3><p>The goal was to translate hand and wrist motion into robotic-arm movement. The project combined sensing, gesture interpretation, timing-sensitive actuation, and a control structure that could respond quickly enough to feel natural.</p></article>
+        <article><h3>Sensing</h3><p>The MPU6050 provided motion/orientation data over I2C, while flex sensors were read through ADC channels to estimate gesture input. The system had to smooth noisy sensor values without making the arm feel delayed.</p></article>
+        <article><h3>Actuation</h3><p>Servo outputs were controlled through PWM signals. The firmware mapped gesture states into servo positions while keeping updates predictable and avoiding sudden motion jumps.</p></article>
+        <article><h3>Firmware structure</h3><p>The bare-metal C code separated acquisition, processing, control mapping, and debug output. Serial logs helped tune thresholds and verify that sensor values matched the arm response.</p></article>
+      </div>
+      <div class="chips"><span>Embedded C</span><span>ATmega328PB</span><span>I2C</span><span>ADC</span><span>PWM</span><span>MPU6050</span><span>Flex Sensors</span><span>Servo Control</span><span>Bare-Metal Firmware</span></div>
+    </div>
+  </details>
+</section>
+
+<section class="section wide"><div class="section-inner course-projects">
+  <div class="section-head reveal"><div><p class="eyebrow">Course + Academic Projects</p><h2>Two years of technical coursework</h2></div><p>These projects were mostly coursework-driven, so they are shown cleanly without forcing fake photos.</p></div>
+  <div class="course-grid">
+    <article class="course-card reveal"><span>Architecture</span><h3>Pipelined RISC-V Processor Design</h3><p>Designed a 32-bit pipelined RISC-V processor in SystemVerilog with RV32I and partial M-extension functionality. Implemented five pipeline stages, forwarding, stalling, branch handling, and testbench-based verification.</p><div class="chips"><span>SystemVerilog</span><span>RISC-V</span><span>Pipelining</span><span>Testbenches</span><span>Digital Design</span></div></article>
+    <article class="course-card reveal"><span>Security</span><h3>PARA Mitigation for RowHammer Attacks</h3><p>Simulated double-sided RowHammer attacks using DRAMSim2 and Ramulator. Implemented PARA-style adjacent-row refresh behavior and evaluated mitigation impact through bit-flip reduction, latency, and bandwidth overhead.</p><div class="chips"><span>DRAM</span><span>RowHammer</span><span>Ramulator</span><span>DRAMSim2</span><span>Hardware Security</span></div></article>
+    <article class="course-card reveal"><span>Embedded Game</span><h3>Pong Game with Wireless Control</h3><p>Developed a bare-metal Pong game on ATmega328PB with a 1.8-inch SPI TFT LCD, joystick ADC control, buzzer feedback, collision logic, scoring, and wireless control using ESP32, Wi-Fi, Blynk IoT, and level shifting.</p><div class="chips"><span>Embedded C</span><span>ATmega328PB</span><span>SPI</span><span>ADC</span><span>ESP32</span><span>Blynk IoT</span></div></article>
+    <article class="course-card reveal"><span>DSP</span><h3>Adaptive Noise Cancellation for Biomedical Audio</h3><p>Developed a MATLAB-based adaptive noise cancellation pipeline for biomedical audio enhancement using LMS-based FIR filtering. Built workflows for audio denoising, coefficient adaptation, waveform visualization, SNR gain analysis, and PSD evaluation using Welch’s method.</p><div class="chips"><span>MATLAB</span><span>DSP</span><span>LMS</span><span>FIR Filters</span><span>SNR</span><span>Welch’s Method</span></div></article>
+    <article class="course-card reveal"><span>CV / ML</span><h3>Content-Based Image Retrieval System</h3><p>Designed and evaluated an image retrieval system using color histograms, local binary patterns, Hu moments, feature fusion, KNN, SVM, and CNN-based models. Best result used CNN + SVM with average precision of 0.96.</p><div class="chips"><span>Python</span><span>MATLAB</span><span>CNN</span><span>SVM</span><span>KNN</span><span>Feature Extraction</span></div></article>
+  </div>
+</div></section>
+
+</main><footer class="footer"><div class="footer-inner">© 2026 Surya Sandeep Akella</div></footer></div><script src="script.js"></script></body></html>

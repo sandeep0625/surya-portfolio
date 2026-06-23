@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><title>Work Experience | Surya Sandeep Akella</title><link rel="stylesheet" href="style.css" /></head>
+<body class="page-transition"><div class="page-shell">
+<header class="site-header"><nav class="nav"><a class="brand" href="index.html"><span class="brand-mark">SA</span><span>Surya Sandeep Akella</span></a><button class="menu-button" aria-expanded="false">Menu</button><div class="nav-links"><a href="index.html">Home</a><a href="education.html">Education</a><a href="experience.html">Work Experience</a><a href="projects.html">Projects</a><a href="contact.html">Contact</a><a class="resume-pill" href="resume.pdf" target="_blank">Resume</a></div></nav></header>
+<main>
+
+<section class="page-hero compact-hero page-hero-soft"><div class="page-hero-inner reveal"><p class="eyebrow">Work Experience</p><h1>Internships, explained like engineering stories.</h1><p>Short summary first. Click each experience to open the deeper technical breakdown.</p></div></section>
+<section class="section exp-accordion">
+  <details class="exp-detail reveal" open>
+    <summary>
+      <div class="summary-left"><span class="badge">AMD</span><h2>Firmware QA Engineering Intern</h2><p>Austin, TX • Server CPU validation</p></div>
+      <div class="summary-right"><p>I worked in server-platform validation, where firmware builds, BIOS settings, Linux state, PCIe devices, and high-speed I/O tests all had to match before a result meant anything.</p><span>Click to expand technical details</span></div>
+    </summary>
+    <div class="exp-expanded">
+      <div class="deep-grid">
+        <article><h3>Platform context</h3><p>The work sat around server CPU validation platforms with PCIe switching paths, ConnectX adapters, RDMA traffic, NVMe/CXL context, BIOS configurations, and Linux-based test execution. My job was to help prove whether the platform behaved correctly across controlled firmware and BIOS build cadences.</p></article>
+        <article><h3>Validation flow</h3><p>I worked through Daily, Staging, Weekly, and PI-style validation runs. Before trusting results, I had to confirm the test setup, BIOS build, device visibility, link state, OS logs, command output, and expected traffic behavior.</p></article>
+        <article><h3>Debug mindset</h3><p>A failing test was not automatically a bug. I learned to separate setup mistakes, device/link issues, firmware changes, Linux-side problems, and real regressions by collecting evidence instead of guessing from one failure.</p></article>
+        <article><h3>What I improved</h3><p>I became faster at platform triage: checking configurations, reading logs, reproducing issues, comparing expected versus actual behavior, and writing useful JIRA notes that another engineer could actually use.</p></article>
+      </div>
+      <div class="chips"><span>Linux</span><span>PCIe</span><span>RDMA</span><span>CXL</span><span>NVMe</span><span>ConnectX-7/8</span><span>BIOS Validation</span><span>Regression Testing</span><span>iperf</span><span>JIRA</span><span>Failure Triage</span></div>
+    </div>
+  </details>
+
+  <details class="exp-detail reveal">
+    <summary>
+      <div class="summary-left"><span class="badge">ITW</span><h2>Electrical Engineering Intern</h2><p>Troy, OH • Custom embedded sensing prototype</p></div>
+      <div class="summary-right"><p>I worked on an embedded sensing prototype that combined a custom STM32H7 board, audio/sensor capture, firmware bring-up, lab debug, and DSP-style analysis.</p><span>Click to expand technical details</span></div>
+    </summary>
+    <div class="exp-expanded">
+      <div class="deep-grid">
+        <article><h3>Project goal</h3><p>The prototype explored whether audio/vibration behavior could be used to understand slicer blade sharpness and machine condition. The challenge was not just collecting a signal; it was building a repeatable hardware + firmware + analysis path around it.</p></article>
+        <article><h3>Board bring-up</h3><p>I worked with a custom STM32H753-based board, checked power rails, validated interfaces, and used lab tools to debug behavior across I2C, I2S, UART, ADC/audio paths, and assembly-related issues.</p></article>
+        <article><h3>Firmware + data</h3><p>The firmware handled peripheral setup, capture flow, communication, and analysis support. The signal-processing side involved FFT workflows, thresholds, smoothing, amplitude trends, and turning noisy measurements into something usable.</p></article>
+        <article><h3>Big lesson</h3><p>This internship made board bring-up feel real. A schematic can be logical, but the actual board still has to be powered, measured, probed, and debugged layer by layer before the system can be trusted.</p></article>
+      </div>
+      <div class="chips"><span>STM32H7</span><span>Custom PCB</span><span>Embedded C</span><span>FreeRTOS</span><span>I2C</span><span>I2S</span><span>UART</span><span>ADC</span><span>FFT</span><span>Oscilloscope</span><span>Logic Analyzer</span><span>MQTT</span><span>Node-RED</span></div>
+    </div>
+  </details>
+</section>
+
+</main><footer class="footer"><div class="footer-inner">© 2026 Surya Sandeep Akella</div></footer></div><script src="script.js"></script></body></html>
